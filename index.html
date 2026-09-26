@@ -23,7 +23,7 @@
     .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;padding-left:5px}
     .brand-mark{width:44px;height:44px;display:grid;place-items:center;flex:none;border-radius:12px;background:#fff;padding:3px;overflow:hidden;box-shadow:4px 4px 0 var(--gold)}
     .brand-mark img{width:100%;height:100%;object-fit:contain;display:block}
-    .brand-mark-fallback{color:var(--orange);font:25px/1 'Gasoek One',sans-serif}
+    .brand-mark-fallback{color:var(--orange);font:800 16px/1 'DM Sans',Arial,sans-serif}
     .brand-text{font-family:'Gasoek One',Impact,sans-serif;letter-spacing:-.035em;font-size:22px;line-height:1}
     .brand-text small{display:block;font:700 9px 'DM Sans',sans-serif;letter-spacing:.23em;text-transform:uppercase;color:#ffb991;margin-top:7px}
     .sidebar-title,.eyebrow{letter-spacing:.17em;text-transform:uppercase;font-weight:800;font-size:10px}
@@ -31,7 +31,6 @@
     .side-menu{display:grid;gap:7px}
     .side-link{width:100%;border:0;text-align:left;padding:12px 14px;border-radius:12px;color:#f8e8d8;background:transparent;display:flex;gap:11px;align-items:center;font-weight:700}
     .side-link:hover,.side-link.active{background:#73302b;color:#fff}
-    .side-icon{font-size:17px;width:19px;text-align:center;line-height:1}
     .side-count{margin-left:auto;color:#ffe1b6;font-size:11px}
     .side-bottom{margin-top:auto;border:1px solid #83433d;border-radius:18px;padding:16px;background:#5c1b19}
     .side-bottom b{display:block;font-size:14px}
@@ -62,49 +61,27 @@
     .calc-card .number-wrap{background:#fff}
     .calc-card .two-results{margin:0 0 15px}
     .calc-card .ingredients{margin-top:5px}
-    .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,345px);gap:18px;align-items:stretch}
-    .hero-main{padding:30px clamp(25px,3vw,43px) 33px;border-radius:24px;background:var(--wine);color:var(--cream);position:relative;overflow:hidden;min-height:240px;box-shadow:var(--shadow)}
-    .hero-main:after{content:'';position:absolute;width:260px;height:260px;border:34px solid rgba(255,255,255,.12);border-radius:50%;right:-95px;top:-90px;pointer-events:none}
-    .hero-main:before{content:'';position:absolute;width:115px;height:115px;border:22px solid rgba(255,255,255,.1);border-radius:50%;right:95px;bottom:-60px;pointer-events:none}
-    .hero .eyebrow{color:#ffe0c7;position:relative;z-index:1}
     h1,h2,h3,p{margin-top:0}
     h1{font:clamp(41px,5vw,69px)/.97 'Gasoek One',Impact,sans-serif;letter-spacing:-.025em;position:relative;z-index:1;margin:13px 0 14px;max-width:640px}
-    .hero-main p{color:#ffe8db;max-width:510px;position:relative;z-index:1;margin-bottom:0;font-size:14px}
-    .hero-stats{background:var(--orange);color:#fff8e5;border-radius:24px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;min-height:240px;position:relative;overflow:hidden}
-    .hero-stats:after{content:'✳';position:absolute;right:20px;top:12px;color:#ffad87;font-size:75px;line-height:1;transform:rotate(18deg)}
-    .hero-stats .eyebrow{color:#ffe1d2}
-    .big-num{font:64px/.95 'Gasoek One',Impact,sans-serif;letter-spacing:-.06em;margin:15px 0 8px}
-    .stat-caption{font-size:13px;color:#fff0e4;max-width:195px}
-    .stats-foot{border-top:1px solid #ffab86;padding-top:12px;margin-top:16px;font-size:11px;font-weight:800;color:#ffe8d9}
-    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:42px 0 18px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:18px 0 15px}
     .section-head h2{font:24px/1.2 'Gasoek One',Impact,sans-serif;letter-spacing:-.02em;margin:5px 0 0}
     .eyebrow.orange{color:var(--orange)}
     .section-head .count{font-size:12px;color:var(--muted);font-weight:800}
-    .toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:17px}
-    .search{display:flex;align-items:center;gap:9px;padding:0 15px;border:1px solid var(--line);border-radius:14px;background:#fffefa;min-height:45px;min-width:240px;flex:1;max-width:440px}
-    .search svg{color:#9b7b72;flex:none}
-    .search input{width:100%;background:transparent;border:0;color:var(--wine);outline:none;font-size:13px}
-    .search input::placeholder{color:#a4958a}
-    .chips{display:flex;gap:7px;flex-wrap:wrap}
-    .chip{border:1px solid #e7d6c6;background:#fffbec;color:#78655f;border-radius:999px;padding:9px 13px;font-size:11px;font-weight:800;white-space:nowrap}
-    .chip:hover,.chip.active{border-color:var(--wine);background:var(--wine);color:white}
-    .workspace{display:grid;grid-template-columns:minmax(240px,360px) minmax(0,1fr);gap:18px;align-items:start}
-    .catalog{display:grid;gap:10px;max-height:750px;overflow:auto;padding:1px 3px 10px 1px;scrollbar-color:#d9b7a2 transparent}
-    .recipe-card{width:100%;min-height:105px;border:1px solid var(--line);background:#fffefa;color:var(--wine);border-radius:17px;padding:15px 16px;text-align:left;display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:12px;transition:transform .15s,border-color .15s,box-shadow .15s}
-    .recipe-card:hover{transform:translateY(-2px);border-color:#e9a487}
-    .recipe-card.active{border:2px solid var(--orange);box-shadow:4px 5px 0 #f9ddbf;padding:14px 15px}
-    .recipe-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:#ffedc9;color:var(--orange);font-size:23px}
-    .recipe-card.active .recipe-icon{background:var(--orange);color:#fff}
-    .recipe-card strong{display:block;font-size:13px;line-height:1.27}
-    .recipe-card small{display:block;margin-top:7px;color:#8f756b;font-size:11px;font-weight:700}
-    .card-arrow{font-size:16px;color:#bd8875;align-self:start}
+    .workspace{min-width:0}
+    .catalog{display:flex;align-items:stretch;gap:8px;overflow-x:auto;max-width:100%;padding:1px 1px 12px;margin-bottom:11px;scrollbar-color:#d9b7a2 transparent}
+    .recipe-switch{flex:0 0 auto;min-height:42px;padding:9px 15px;border:1px solid var(--line);border-radius:12px;background:#fffefa;color:var(--wine);font-weight:800;font-size:13px;white-space:nowrap}
+    .recipe-switch:hover{border-color:var(--orange)}
+    .recipe-switch.active{background:var(--orange);border-color:var(--orange);color:#fff}
     .empty{background:#fffefa;border:1px dashed #ddc5b3;border-radius:17px;padding:24px;color:var(--muted);font-weight:700}
-    .detail{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);min-height:595px;overflow:hidden}
+    .detail{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
     .detail-top{padding:25px clamp(20px,2.6vw,33px) 22px;background:#fff4df;border-bottom:1px solid #ebd9bf;position:relative}
     .detail-top:after{content:'';position:absolute;width:130px;height:130px;border:19px solid rgba(228,55,6,.065);border-radius:50%;right:-48px;top:-64px;pointer-events:none}
     .detail-type{display:inline-block;color:var(--orange);background:#fffaf0;border:1px solid #f5d2b4;border-radius:100px;padding:6px 11px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
     .detail-top h3{font:clamp(23px,2vw,31px)/1.18 'Gasoek One',Impact,sans-serif;letter-spacing:-.028em;margin:16px 0 10px;position:relative}
     .detail-body{padding:25px clamp(20px,2.6vw,33px) 30px}
+    .detail-body.sauce-layout{display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,1fr);gap:25px;align-items:start}
+    .detail-body.sauce-layout .module{margin-bottom:0}
+    .ingredient-panel{min-width:0}
     .module{border:1px solid #eadbd0;border-radius:17px;padding:19px;background:#fffefa;margin-bottom:23px}
     .module-kicker{color:var(--orange);font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
     .module h4{font:19px/1.3 'Gasoek One',Impact,sans-serif;letter-spacing:-.02em;margin:6px 0 12px}
@@ -113,40 +90,47 @@
     .input-row label{font-size:12px;font-weight:800;min-width:100px}
     .number-wrap{display:flex;align-items:center;background:white;border:1.5px solid #dbbfae;border-radius:11px;overflow:hidden;max-width:185px;height:43px}
     .number-wrap:focus-within{border-color:var(--orange)}
-    .number-wrap input{border:0;background:transparent;outline:none;width:110px;padding:8px 10px;font-size:18px;font-weight:800;color:var(--wine)}
+    .number-wrap input{border:0;background:transparent;outline:none;width:110px;padding:8px 10px;font-size:22px;font-weight:800;color:var(--wine)}
     .number-wrap span{font-size:12px;color:var(--muted);font-weight:800;padding:0 11px 0 0;white-space:nowrap}
     .hint{font-size:11px;color:#8d736a;margin:10px 0 0!important}
     .two-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:17px}
     .result{background:var(--wine);color:#fff4df;border-radius:14px;padding:15px 16px}
     .result.light{background:#fff1d4;color:var(--wine)}
     .result small{display:block;font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.76}
-    .result strong{display:block;font:clamp(21px,2vw,28px)/1.3 'Gasoek One',Impact,sans-serif;margin-top:5px;letter-spacing:-.025em}
+    .result strong{display:block;font:800 clamp(27px,3vw,38px)/1.13 'DM Sans',Arial,sans-serif;margin-top:7px;letter-spacing:-.045em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
     .subhead{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:0 0 12px}
     .subhead h4{font-size:15px;margin:0;font-weight:800}
     .subhead span{font-size:11px;color:var(--muted);font-weight:800}
+    .check-tools{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+    .reset-check{border:0;background:transparent;color:var(--orange);font-size:11px;font-weight:800;padding:5px;white-space:nowrap}
+    .reset-check:hover{text-decoration:underline}
     .ingredients{width:100%;border-collapse:collapse;font-size:13px}
     .ingredients th{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#947668;text-align:left;border-bottom:1px solid var(--line);padding:10px 0}
     .ingredients th:last-child,.ingredients td:last-child{text-align:right}
     .ingredients td{padding:11px 0;border-bottom:1px solid #f0e8dc;vertical-align:top}
     .ingredients tr:last-child td{border-bottom:0}
     .ingredients td:last-child{font-weight:800;white-space:nowrap;padding-left:14px}
-    .note-box{margin-top:21px;padding:14px 15px;border-radius:12px;background:#fff5e7;border-left:3px solid var(--orange);color:#725348;font-size:11px}
-    @media(max-width:1100px){.app{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding-left:15px;padding-right:15px}.workspace{grid-template-columns:minmax(205px,275px) minmax(0,1fr)}.recipe-card{grid-template-columns:38px minmax(0,1fr) 10px;padding:12px}.recipe-icon{height:38px;width:38px}.main{padding-left:23px;padding-right:23px}}
-    @media(max-width:790px){.app{display:block}.sidebar{position:static;height:auto;padding:17px 20px;gap:0}.brand{padding:0}.sidebar nav,.side-bottom{display:none}.main{padding:18px 18px 44px}.topbar{margin-bottom:18px}.hero{grid-template-columns:1fr 170px}.hero-main,.hero-stats{min-height:190px}.hero-main{padding:26px}.hero-stats{padding:20px}.big-num{font-size:48px}.workspace{grid-template-columns:1fr}.catalog{display:flex;overflow:auto;max-height:none;scroll-snap-type:x mandatory;padding-bottom:12px}.recipe-card{min-width:220px;max-width:250px;scroll-snap-align:start}.detail{min-height:0}.section-head{margin-top:34px}}
+    .ingredient-check{display:flex;align-items:flex-start;gap:11px;cursor:pointer;line-height:1.4}
+    .ingredient-check input{width:19px;height:19px;flex:none;margin:0;accent-color:var(--orange);cursor:pointer}
+    .ingredient-check.checked span{color:#937e73;text-decoration:line-through}
+    .ingredients.checkable td:last-child{font-size:15px}
+    @media(max-width:1100px){.app{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding-left:15px;padding-right:15px}.main{padding-left:23px;padding-right:23px}}
+    @media(max-width:900px){.detail-body.sauce-layout{grid-template-columns:1fr;gap:21px}.detail-body.sauce-layout .module{margin-bottom:0}}
+    @media(max-width:790px){.app{display:block}.sidebar{position:static;height:auto;padding:17px 20px;gap:0}.brand{padding:0}.sidebar nav,.side-bottom{display:none}.main{padding:18px 18px 44px}.topbar{margin-bottom:18px}}
     @media(max-width:700px){.calc-grid{grid-template-columns:1fr}.calc-card{padding:18px}}
-    @media(max-width:575px){.brand-mark{width:38px;height:38px}.brand-text{font-size:20px}.crumb{font-size:10px}.topbar{align-items:flex-start;flex-wrap:wrap;gap:8px}.top-right{width:100%;justify-content:space-between;flex-wrap:nowrap}.source-status{font-size:10px}.ghost-btn{font-size:10px}.page-nav{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.page-tab{flex:none}.calc-header{padding:19px}.calc-card h2{font-size:19px}.hero{grid-template-columns:1fr;gap:15px}.hero-main{min-height:215px;padding:26px 24px}.hero-stats{min-height:116px;display:grid;grid-template-columns:1fr auto;align-items:center;padding:17px 21px}.hero-stats .eyebrow,.hero-stats .stat-caption{grid-column:1}.hero-stats .big-num{grid-column:2;grid-row:1/4;margin:0 18px 0 0;font-size:45px}.hero-stats .stats-foot{grid-column:1/-1;margin-top:9px}.hero-stats:after{font-size:50px;right:11px;top:8px}.section-head h2{font-size:20px}.search{min-width:100%;max-width:100%}.two-results{gap:8px}.result{padding:12px}.detail-body{padding:20px 17px}.detail-top{padding:22px 17px}.module{padding:15px}.number-wrap{max-width:165px}}
-    @media print{body{background:#fff}.app{display:block}.sidebar,.topbar,.page-nav,.hero,.section-head,.toolbar,.catalog{display:none!important}.main{padding:0}.workspace{display:block}.detail{border:0;box-shadow:none}.detail-top{background:#fff;border-bottom:2px solid #333}.detail-body{padding:20px}.module,.calc-card{break-inside:avoid}.result,.result.light{background:#fff;color:#111;border:1px solid #aaa}h3{color:#111}}
+    @media(max-width:575px){.brand-mark{width:38px;height:38px}.brand-text{font-size:20px}.crumb{font-size:10px}.topbar{align-items:flex-start;flex-wrap:wrap;gap:8px}.top-right{width:100%;justify-content:space-between;flex-wrap:nowrap}.source-status{font-size:10px}.ghost-btn{font-size:10px}.page-nav{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.page-tab{flex:none}.calc-header{padding:19px}.calc-card h2{font-size:19px}.section-head h2{font-size:20px}.recipe-switch{font-size:12px;padding:9px 11px}.two-results{gap:8px}.result{padding:12px}.result strong{font-size:clamp(25px,7.5vw,34px)}.detail-body{padding:20px 17px}.detail-top{padding:22px 17px}.module{padding:15px}.number-wrap{max-width:165px}.subhead{align-items:start;flex-wrap:wrap}.check-tools{width:100%;justify-content:space-between}}
+    @media print{body{background:#fff}.app{display:block}.sidebar,.topbar,.page-nav,.section-head,.catalog{display:none!important}.main{padding:0}.detail{border:0;box-shadow:none}.detail-top{background:#fff;border-bottom:2px solid #333}.detail-body{padding:20px}.module,.calc-card{break-inside:avoid}.result,.result.light{background:#fff;color:#111;border:1px solid #aaa}h3{color:#111}}
   </style>
 </head>
 <body>
   <div class="app">
     <aside class="sidebar">
-      <a class="brand" href="#atas" aria-label="Si Katsu, kembali ke atas"><span class="brand-mark"><img src="./logo" alt="" referrerpolicy="no-referrer" onerror="const paths=['./logo.png','https://lh3.googleusercontent.com/d/1AmFDGypbIihM4aSibIJE0yKFEbc8NA9R=w240','https://drive.google.com/thumbnail?id=1AmFDGypbIihM4aSibIJE0yKFEbc8NA9R&amp;sz=w240'];const step=Number(this.dataset.fallback||0);if(step<paths.length){this.dataset.fallback=String(step+1);this.src=paths[step]}else{this.hidden=true;this.nextElementSibling.hidden=false}"><span class="brand-mark-fallback" hidden aria-hidden="true">✳</span></span><span class="brand-text">Si Katsu<small>operational recipes</small></span></a>
+      <a class="brand" href="#atas" aria-label="Si Katsu, kembali ke atas"><span class="brand-mark"><img src="./logo" alt="" referrerpolicy="no-referrer" onerror="const paths=['./logo.png','https://lh3.googleusercontent.com/d/1AmFDGypbIihM4aSibIJE0yKFEbc8NA9R=w240','https://drive.google.com/thumbnail?id=1AmFDGypbIihM4aSibIJE0yKFEbc8NA9R&amp;sz=w240'];const step=Number(this.dataset.fallback||0);if(step<paths.length){this.dataset.fallback=String(step+1);this.src=paths[step]}else{this.hidden=true;this.nextElementSibling.hidden=false}"><span class="brand-mark-fallback" hidden aria-hidden="true">Si</span></span><span class="brand-text">Si Katsu<small>operational recipes</small></span></a>
       <nav aria-label="Kategori resep">
         <div class="sidebar-title">Buku racikan</div>
         <div class="side-menu" id="sideMenu"></div>
       </nav>
-      <div class="side-bottom"><b>Buku Racikan ✳</b><p>Takaran dasar dan kalkulator batch, selalu di satu tempat.</p></div>
+      <div class="side-bottom"><b>Buku Racikan</b><p>Takaran dasar dan kalkulator batch, selalu di satu tempat.</p></div>
     </aside>
     <main class="main" id="atas">
       <div class="topbar">
@@ -158,13 +142,8 @@
         <div class="calc-header"><div class="eyebrow">Si Katsu · Operasional</div><h1 id="calculatorTitle">KALKULATOR PRODUKSI.</h1><p>Masukkan berat ayam dalam kg. Gunakan titik atau koma untuk desimal.</p></div>
         <div class="calc-grid" id="calculatorGrid"></div>
       </section>
-      <section class="hero" id="heroPage" aria-label="Ringkasan buku racikan" hidden>
-        <div class="hero-main"><div class="eyebrow">Si Katsu · Operational dashboard</div><h1>BUKU<br>RACIKAN.</h1><p>Pilih racikan, masukkan target produksi, dan lihat takaran setiap bahan secara langsung.</p></div>
-        <div class="hero-stats"><div class="eyebrow">Si Katsu recipe book</div><div id="recipeCount" class="big-num">5</div><div class="stat-caption">resep produksi tercatat</div><div class="stats-foot">Premix saus · Brining · Perekat</div></div>
-      </section>
       <section id="browsePage" aria-labelledby="catalogTitle" hidden>
-        <div class="section-head"><div><div class="eyebrow orange">Pilih racikan</div><h2 id="catalogTitle">Buku Resep</h2></div><div class="count" id="visibleCount">5 resep</div></div>
-        <div class="toolbar" id="searchToolbar"><label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="searchInput" type="search" placeholder="Cari resep saus atau bahan..." aria-label="Cari resep saus atau bahan"></label></div>
+        <div class="section-head"><div><div class="eyebrow orange">Pilih racikan</div><h2 id="catalogTitle">Premix Saus</h2></div><div class="count" id="visibleCount">3 resep</div></div>
         <div class="workspace" id="recipeWorkspace"><div class="catalog" id="recipeList" aria-label="Daftar resep"></div><article class="detail" id="recipeDetail" aria-live="polite"></article></div>
       </section>
     </main>
@@ -192,17 +171,14 @@
     };
 
     const VIEWS = [
-      {key:'calculator',label:'Kalkulator',icon:'✳'},
-      {key:'sauce',label:'Premix Saus',icon:'◉'},
-      {key:'brining',label:'Premix Brining',icon:'✷'}
+      {key:'calculator',label:'Kalkulator'},
+      {key:'sauce',label:'Premix Saus'},
+      {key:'brining',label:'Premix Brining'}
     ];
-    const state = { data:EMBEDDED, selected:'hot_lava', view:'calculator', search:'', chickenKg:1, jars:1, batches:1, perekatKg:1, source:'embedded' };
+    const readSavedChecks=()=>{try{return JSON.parse(sessionStorage.getItem('siKatsuSauceChecklist')||'{}')}catch{return {}}};
+    const state = { data:EMBEDDED, selected:'hot_lava', view:'calculator', chickenKg:1, jars:1, batches:1, perekatKg:1, source:'embedded', checkedIngredients:readSavedChecks() };
     const $ = s=>document.querySelector(s);
     const esc=s=>String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    const displayNote=s=>{
-      const note=String(s ?? '').replace(/\bDamar\b/gi,'').replace(/\s{2,}/g,' ').trim();
-      return /^(?:Cabai bubuk yang dicoret|Premix saja\. Air dan tahap masak di outlet|Satu batch\s*=\s*1 toples)/i.test(note)?'':note;
-    };
     const fmt=n=>new Intl.NumberFormat('id-ID',{maximumFractionDigits:3}).format(Math.round((Number(n)+Number.EPSILON)*1000)/1000);
     const num=v=>{
       if(typeof v==='number')return v;
@@ -212,31 +188,26 @@
     };
     const entryNumber=v=>Number(String(v ?? '').trim().replace(',','.'));
     const label=c=>({premix_saus:'Premix saus',premix_kering:'Premix kering',adonan_perekat:'Adonan perekat'})[c]||c;
-    const icon=c=>({premix_saus:'◉',premix_kering:'✷',adonan_perekat:'◌'})[c]||'✳';
-
-    function filtered(){return state.data.recipes.filter(r=>{
-      const matchCat=state.view==='sauce'?r.category==='premix_saus':r.recipe_id==='brining';
-      const hay=[r.recipe_name,...state.data.ingredients.filter(i=>i.recipe_id===r.recipe_id).map(i=>i.ingredient_name)].join(' ').toLocaleLowerCase('id');
-      return matchCat&&hay.includes(state.search.toLocaleLowerCase('id'));
-    });}
+    function filtered(){return state.data.recipes.filter(r=>state.view==='sauce'?r.category==='premix_saus':r.recipe_id==='brining');}
     function renderFilters(){
       const counts={calculator:2,sauce:state.data.recipes.filter(r=>r.category==='premix_saus').length,brining:1};
-      $('#sideMenu').innerHTML=VIEWS.map(v=>`<button class="side-link ${state.view===v.key?'active':''}" data-view="${v.key}" type="button"><span class="side-icon" aria-hidden="true">${v.icon}</span><span>${v.label}</span><span class="side-count">${counts[v.key]}</span></button>`).join('');
-      $('#pageNav').innerHTML=VIEWS.map(v=>`<button class="page-tab ${state.view===v.key?'active':''}" data-view="${v.key}" type="button" aria-current="${state.view===v.key?'page':'false'}">${v.icon} ${v.label}</button>`).join('');
-      document.querySelectorAll('[data-view]').forEach(el=>el.addEventListener('click',()=>{state.view=el.dataset.view;state.search='';$('#searchInput').value='';state.selected=state.view==='brining'?'brining':'hot_lava';render();window.scrollTo({top:0,behavior:'smooth'});}));
+      $('#sideMenu').innerHTML=VIEWS.map(v=>`<button class="side-link ${state.view===v.key?'active':''}" data-view="${v.key}" type="button"><span>${v.label}</span><span class="side-count">${counts[v.key]}</span></button>`).join('');
+      $('#pageNav').innerHTML=VIEWS.map(v=>`<button class="page-tab ${state.view===v.key?'active':''}" data-view="${v.key}" type="button" aria-current="${state.view===v.key?'page':'false'}">${v.label}</button>`).join('');
+      document.querySelectorAll('[data-view]').forEach(el=>el.addEventListener('click',()=>{state.view=el.dataset.view;state.selected=state.view==='brining'?'brining':'hot_lava';render();window.scrollTo({top:0,behavior:'smooth'});}));
     }
     function renderList(){
       const list=filtered();$('#visibleCount').textContent=`${list.length} resep`;
       if(list.length&&!list.some(r=>r.recipe_id===state.selected))state.selected=list[0].recipe_id;
       $('#recipeList').innerHTML=list.length?list.map(r=>{
-        const basis=r.scaling_type==='chicken_kg'?`Untuk ${fmt(r.base_chicken_kg)} kg ayam`:`${fmt(r.base_yield_g)} g / batch`;
-        return `<button type="button" class="recipe-card ${state.selected===r.recipe_id?'active':''}" data-recipe="${esc(r.recipe_id)}" aria-pressed="${state.selected===r.recipe_id}"><span class="recipe-icon" aria-hidden="true">${icon(r.category)}</span><span><strong>${esc(r.recipe_name)}</strong><small>${esc(basis)}</small></span><span class="card-arrow" aria-hidden="true">↗</span></button>`;
+        const shortName=({hot_lava:'Hot Lava',bbq:'BBQ',blackpepper:'Blackpepper'})[r.recipe_id]||r.recipe_name.replace(/^Premix Saus\s*/i,'');
+        return `<button type="button" class="recipe-switch ${state.selected===r.recipe_id?'active':''}" data-recipe="${esc(r.recipe_id)}" aria-pressed="${state.selected===r.recipe_id}" aria-label="${esc(r.recipe_name)}">${esc(shortName)}</button>`;
       }).join(''):'<div class="empty">Belum ada resep yang cocok. Coba kata kunci lain.</div>';
-      document.querySelectorAll('[data-recipe]').forEach(el=>el.addEventListener('click',()=>{state.selected=el.dataset.recipe;renderList();renderDetail();if(innerWidth<791)$('#recipeDetail').scrollIntoView({behavior:'smooth',block:'start'});}));
+      document.querySelectorAll('[data-recipe]').forEach(el=>el.addEventListener('click',()=>{state.selected=el.dataset.recipe;renderList();renderDetail();}));
     }
-    function ingredientTable(id,factor){
+    function ingredientTable(id,factor,checkable=false){
       const rows=state.data.ingredients.filter(i=>i.recipe_id===id).sort((a,b)=>num(a.position)-num(b.position));
-      return `<table class="ingredients"><thead><tr><th>Bahan</th><th>Takaran</th></tr></thead><tbody>${rows.map(i=>`<tr><td>${esc(i.ingredient_name)}</td><td>${fmt(num(i.quantity)*factor)} ${esc(i.unit)}</td></tr>`).join('')}</tbody></table>`;
+      const checked=new Set(Array.isArray(state.checkedIngredients[id])?state.checkedIngredients[id]:[]);
+      return `<table class="ingredients ${checkable?'checkable':''}"><thead><tr><th>Bahan</th><th>Takaran</th></tr></thead><tbody>${rows.map(i=>`<tr><td>${checkable?`<label class="ingredient-check ${checked.has(i.ingredient_name)?'checked':''}"><input type="checkbox" data-check-ingredient="${esc(i.ingredient_name)}" ${checked.has(i.ingredient_name)?'checked':''}><span>${esc(i.ingredient_name)}</span></label>`:esc(i.ingredient_name)}</td><td>${fmt(num(i.quantity)*factor)} ${esc(i.unit)}</td></tr>`).join('')}</tbody></table>`;
     }
     function numberControl(kind,labelText,value,unit){return `<div class="input-row"><label for="input-${kind}">${labelText}</label><div class="number-wrap"><input id="input-${kind}" type="text" inputmode="decimal" autocomplete="off" value="${esc(value)}" aria-label="${labelText}"><span>${unit}</span></div></div>`;}
     function scaleModule(r){
@@ -251,7 +222,23 @@
         return `<div class="module"><div class="module-kicker">Kalkulator bahan</div><h4>Perekat untuk ayam</h4>${numberControl('perekatKg','Berat ayam',kg,'kg')}</div><div class="subhead"><h4>Bahan untuk ${fmt(kg)} kg ayam</h4><span>g · ml · pcs</span></div>${ingredientTable(r.recipe_id,factor)}`;
       }
       const batches=state.batches;
-      return `<div class="module"><div class="module-kicker">Kalkulator produksi</div><h4>Berapa batch premix?</h4>${numberControl('batches','Jumlah batch',batches,'batch')}<div class="two-results"><div class="result"><small>Total premix</small><strong>${fmt(num(r.base_yield_g)*batches)} g</strong></div><div class="result light"><small>Takaran bahan</small><strong>× ${fmt(batches)}</strong></div></div></div><div class="subhead"><h4>Bahan untuk ${fmt(batches)} batch</h4><span>Satuan gram</span></div>${ingredientTable(r.recipe_id,batches)}`;
+      const rows=state.data.ingredients.filter(i=>i.recipe_id===r.recipe_id);
+      const checked=new Set(Array.isArray(state.checkedIngredients[r.recipe_id])?state.checkedIngredients[r.recipe_id]:[]);
+      const done=rows.filter(i=>checked.has(i.ingredient_name)).length;
+      return `<div class="module"><div class="module-kicker">Kalkulator produksi</div><h4>Berapa batch premix?</h4>${numberControl('batches','Jumlah batch',batches,'batch')}<div class="two-results"><div class="result"><small>Total premix</small><strong>${fmt(num(r.base_yield_g)*batches)} g</strong></div><div class="result light"><small>Takaran bahan</small><strong>× ${fmt(batches)}</strong></div></div></div><div class="ingredient-panel"><div class="subhead"><h4>Bahan untuk ${fmt(batches)} batch</h4><div class="check-tools"><span id="checkProgress" aria-live="polite">${done}/${rows.length} bahan masuk</span><button type="button" id="resetChecklist" class="reset-check">Reset</button></div></div>${ingredientTable(r.recipe_id,batches,true)}</div>`;
+    }
+    function bindChecklist(id){
+      const boxes=[...document.querySelectorAll('#recipeDetail [data-check-ingredient]')];
+      if(!boxes.length)return;
+      const update=()=>{
+        const checked=boxes.filter(box=>box.checked).map(box=>box.dataset.checkIngredient);
+        state.checkedIngredients[id]=checked;
+        try{sessionStorage.setItem('siKatsuSauceChecklist',JSON.stringify(state.checkedIngredients))}catch{}
+        boxes.forEach(box=>box.closest('label').classList.toggle('checked',box.checked));
+        $('#checkProgress').textContent=`${checked.length}/${boxes.length} bahan masuk`;
+      };
+      boxes.forEach(box=>box.addEventListener('change',update));
+      $('#resetChecklist').addEventListener('click',()=>{boxes.forEach(box=>{box.checked=false});update();});
     }
     let inputDebounce;
     function bindInput(key,draw){
@@ -288,21 +275,17 @@
     function renderDetail(){
       const r=state.data.recipes.find(x=>x.recipe_id===state.selected);
       if(!r){$('#recipeDetail').innerHTML='<div class="detail-body">Pilih resep untuk melihat takarannya.</div>';return;}
-      const note=displayNote(r.notes);
-      $('#recipeDetail').innerHTML=`<div class="detail-top"><span class="detail-type">${esc(label(r.category))}</span><h3>${esc(r.recipe_name)}</h3></div><div class="detail-body">${scaleModule(r)}${note?`<div class="note-box">${esc(note)}</div>`:''}</div>`;
+      $('#recipeDetail').innerHTML=`<div class="detail-top"><span class="detail-type">${esc(label(r.category))}</span><h3>${esc(r.recipe_name)}</h3></div><div class="detail-body ${r.category==='premix_saus'?'sauce-layout':''}">${scaleModule(r)}</div>`;
       for(const key of ['jars','batches'])bindInput(key,renderDetail);
+      if(r.category==='premix_saus')bindChecklist(r.recipe_id);
     }
     function render(){
       $('#calculatorPage').hidden=state.view!=='calculator';
       $('#browsePage').hidden=state.view==='calculator';
-      $('#heroPage').hidden=state.view==='calculator';
-      $('#searchToolbar').hidden=state.view==='brining';
       $('#recipeList').hidden=state.view==='brining';
-      $('#recipeWorkspace').style.gridTemplateColumns=state.view==='brining'?'minmax(0,1fr)':'';
       $('#catalogTitle').textContent=state.view==='brining'?'Premix Brining':'Premix Saus';
       renderFilters();renderCalculator();
       if(state.view!=='calculator'){renderList();renderDetail();}
-      $('#recipeCount').textContent=state.data.recipes.length;
     }
 
     // Visualization API memakai callback script, sehingga halaman statis dapat membaca
@@ -335,7 +318,6 @@
         state.data={recipes,ingredients,usage};state.source='sheets';status.textContent='Google Sheets tersambung';status.classList.add('live');render();
       }catch(e){status.textContent=state.source==='sheets'?'Data terakhir · gagal memperbarui':'Data bawaan · Sheet belum terbaca';status.title=String(e.message||e);status.classList.remove('live');}
     }
-    $('#searchInput').addEventListener('input',e=>{state.search=e.target.value.trim();renderList();renderDetail();});
     render();
     $('#refreshBtn').hidden=false;
     $('#refreshBtn').addEventListener('click',loadSheets);
